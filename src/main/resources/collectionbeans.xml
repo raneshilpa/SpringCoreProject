@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="emp1" class="co.spring.homepractice.EmpCollection">
+    <property name="name" value="Shilpa"/>
+    <property name="phones">
+        <list>
+            <value>1111111</value>
+            <value>2222222</value>
+            <value>3333333</value>
+            <value>4444444</value>
+        </list>
+    </property>
+    <property name="addresses">
+        <set>
+            <value>Kanpur</value>
+            <value>Pune</value>
+            <value>Goa</value>
+        </set>
+    </property>
+    <property name="courses">
+
+        <map>
+         <entry key="Java" value="2months"></entry>
+            <entry key="Selenium" value="3months"></entry>
+            <entry key="DEVOPS" value="4months"></entry>
+
+        </map>
+    </property>
+
+</bean>
+
+
+
+
+
+</beans>

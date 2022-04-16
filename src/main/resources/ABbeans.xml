@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name ="bref" class="co.spring.homepractice.BClass">
+    <property name="y" value="20"></property>
+</bean>
+<bean name="aref" class="co.spring.homepractice.AClass"  >
+    <property name="x" value="30"></property>
+    <property name="ob" ref="bref"></property>
+</bean>
+<!--<bean name="aref" class="co.spring.homepractice.AClass" p:x="10" p:ob-ref="bref"/>-->
+
+
+</beans>
